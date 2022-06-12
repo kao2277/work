@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;700&display=swap');
+
+:root{
+    --primary:#0d6efd;
+    --dark: #480320;
+    --body:#888;
+    --box-shadow: 0 8px 22px
+    rgba(0,0,0,0.2);
+}
+
+/*追加CSS*/
+a.btn-solid-gold {
+    /* color: #b1921b; */
+    border-right: 4px solid #9f801c;
+    border-bottom: 10px solid #987c1e;
+    /* border-left: 4px solid #ffed8b; */
+    border-radius: 50px;
+    background: -webkit-gradient(linear, right top, left top, from(#ffd75b), color-stop(30%, #fff5a0), color-stop(40%, #fffabe), color-stop(50%, #ffffdb), color-stop(70%, #fff5a0), to(#fdd456));
+    background: -webkit-linear-gradient(right, #ffd75b 0%, #fff5a0 30%, #fffabe 40%, #ffffdb 50%, #fff5a0 70%, #fdd456 100%);
+    background: linear-gradient(-90deg, #ffd75b 0%, #fff5a0 30%, #fffabe 40%, #fdfdb9 50%, #fff5a0 70%, #fdd456 100%);
+    text-shadow: -1px -1px 1px #ffffd9;
+}
+
+a.btn-solid-gold:hover {
+  margin-top: 3px;
+  color: #42380f;
+  border-right: 4px solid #cea82c;
+  border-bottom: 7px solid #987c1e;
+  border-left: 4px solid #ffed8b;
+}
+
+
+button.navbar-toggler.collapsed {}
+
+div#ofuro {
+    background-image: url(images/YAMA_DSC7115.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 500px;
+}
+
+div#oheya {
+    background-image: url(images/nichinan0I9A2671.jpg);
+}
+
+#staff span {
+}
+
+h5.mb-0.mt-4 {}
+
+h5.mb-0.mt-4 {
+    color: #fff;
+    margin: 0;
+}
+
+strong {}
+
+h1.display-4.text-white.my-3 {
+    width: 100%;
+}
+
+span.navbar-toggler-icon {
+    color: #fff;
+}
+
+.col-md-10.pt-4.offset-md-1 p {
+    padding: 40px 0;
+}
+
+.team-member.card-effect p {
+    color: #fff;
+    margin-top: 15px;
+}
+
+.blog-card.card-effect img {
+    width: 100%;
+}
+
+.blog-card.card-effect p {
+    color: #fff;
+}
+
+.blog-card.card-effect {}
+
+section#services {
+    background-image: url(images/omotenasi.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 2;
+}
+
+div#omotenashi p {
+}
+
+div#omotenashi {
+    background: #fff;
+    opacity: 70%;
+    padding: 20px;
+    color: #fff;
+    color: #ff;
+    color: #f;
+    color: #;
+}
+
+section #odemukae {
+    background-image: url(images/omotenashi.jpg);
+}
+
+section#odemukae {
+    background-position: center;
+    background-image: url(images/omotenashi.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    /* background-color: #fff; */
+    z-index: 2;
+}
+
+div#home img {
+    width: 150px;
+}
+
+
+
+
+
+body{
+    font-family: serif;
+    /* line-height: 1.7; */
+    color: var(--body);
+}
+
+h1, h2, h3, h4, h5, h6, .display-4{
+color:var(--dark);
+font-weight:700;
+}
+
+a{
+    color:var(--dark);
+    text-decoration: none;
+}
+
+section{
+    padding-top:120px;
+    padding-bottom:120px
+}
+
+.navbar .nav-link{
+   color:#fff !important;
+   font-size: 14px;
+   font-weight: 700;
+   padding-top: 16px;
+}
+
+.btn{
+    padding: 14px 18px;
+    border-width: 2px;
+    border-radius: 0;
+}
+
+.hero {
+    background-image: url("images/AME_ginzan02.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    z-index:2;
+}
+.hero::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgb(18 18 18 / 56%);
+    z-index: -1;
+}
+.card-effect {
+    box-shadow: var(--box-shadow);
+    background-color: #fff;
+    padding:25px;
+    transition:all 0.35s ease;
+}
+
+.card-effect:hover{
+    box-shadow: none;
+    transform:translateY(5px);
+}
+
+.iconbox{
+    width:54px;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 32px;
+    background-color: #600129;
+    border-radius: 100px;
+    flex:
+    none;
+}
+
+.service{
+    position:relative;
+    overflow: hidden;
+}
+
+.service::after{
+    content: "";
+    position: absolute;
+    top: -100%;
+    left: 0;
+    background-color: var(--primary);
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition:all 0.35s ease;
+    z-index:-1;
+}
+
+.service:hover h5,
+.service:hover p{
+    color:#fff;
+}
+
+.service:hover .iconbox {
+background-color: #fff;
+color:var(--primary)
+}
+
+.service:hover::after {
+    opacity: 1;
+    top: 0;
+}
+.col-img{
+    background-image: url(images/ITOU85_ryouri20150221172012_TP_V.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height:500px;
+    margin: 30px 0;
+}
+/*project section*/
+.project{
+    position: relative;
+    overflow: hidden;
+}
+.project .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(37, 39, 71, 0.7);
+    padding: 30px;
+    display: flex;
+    align-items: flex-end;
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+
+img{
+    width: 200px;
+}
+
+.project img {
+   transition: all 0.4s ease;
+}
+.project:hover .overlay {
+   opacity: 1;
+}
+.project:hover img{
+    transform: scale(1.1);
+}
+/*Team section*/
+.team-member img{
+    width: 125px;
+    height: 125px;
+    border-radius: 100px;
+}
+.social-icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-icons a {
+    width: 34px;
+    height: 34px;
+    background-color: var(--primary);
+    border:2px solid var(--primary);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    margin-left: 5px;
+    transition: all 0.4s ease;
+}
+.social-icons a:hover {
+    color:var(--primary);
+    background-color: transparent;
+}
+
+/*contact section*/
+form input .form-control{
+    height: 56px;    
+}
+
+form .form-control{
+    border: transparent;
+    border-radius: 0;
+    background-color: rgba(0,0,0, 0.04);
+}
+
+.footer-top{
+    background-color: var(--dark);
+    padding: 90px;
+    padding-bottom: 90px;
+}
+.footer-top a{
+    color: var(--body);
+}
+.footer-top a:hover{
+    color: #fff;
+}
