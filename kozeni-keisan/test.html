@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>小銭の計算</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <div id="app" class="container">
+        <div class="row">
+            <div class="col-8 offset-2">
+                <h1 class="mt-5">小銭の計算</h1>
+
+                <div>
+                    <p>いくら？</p>
+                    <p><input type="number" name="price" v-model="price"> <button v-on:click="calc()">計算</button></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-4 offset-2">
+                500円： {{ yen500 }}
+            </div>
+            <div class="col-4">
+                100円： {{ yen100 }}
+            </div>
+            <div class="col-4 offset-2">
+                50円： {{ yen50 }}
+            </div>
+            <div class="col-4">
+                10円： {{ yen10 }}
+            </div>
+            <div class="col-4 offset-2">
+                5円： {{ yen5 }}
+            </div>
+            <div class="col-4">
+                1円： {{ yen1 }}
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+        var app = new Vue({
+            el: '#app',
+            data: {
+                price: 0,
+                yen500: 0,
+                yen100: 0,
+                yen50: 0,
+                yen10: 0,
+                yen5: 0,
+                yen1: 0
+            },
+            methods: {
+                calc: function(event) {
+                    change = this.price;
+                    this.yen500 = Math.floor(change / 500);
+                    change %= 500;
+                    this.yen100 = Math.floor(change / 100);
+                    change %= 100;
+                    this.yen50 = Math.floor(change / 50);
+                    change %= 50;
+                    this.yen10 = Math.floor(change / 10);
+                    change %= 10;
+                    this.yen5 = Math.floor(change / 5);
+                    this.yen1 = change % 5;
+                }
+            }
+        })
+    </script>
+</body>
+</html>
