@@ -8,7 +8,13 @@
     rgba(0,0,0,0.2);
 }
 
-/*追加CSS*/
+/*è¿½åŠ CSS*/
+
+div#omotenashi {
+    background-color: rgba( 255, 255, 255, 0.78 );
+}
+
+
 a.btn-solid-gold {
     /* color: #b1921b; */
     border-right: 4px solid #9f801c;
@@ -69,7 +75,7 @@ span.navbar-toggler-icon {
 
 .team-member.card-effect p {
     color: #fff;
-    margin-top: 15px;
+    margin: 15px 0 0 0;
 }
 
 .blog-card.card-effect img {
@@ -91,17 +97,10 @@ section#services {
     z-index: 2;
 }
 
-div#omotenashi p {
-}
+div#omotenashi p {color: #000;}
 
 div#omotenashi {
-    background: #fff;
-    opacity: 70%;
-    padding: 20px;
-    color: #fff;
-    color: #ff;
-    color: #f;
-    color: #;
+    padding: 40px;
 }
 
 section #odemukae {
@@ -143,8 +142,8 @@ a{
 }
 
 section{
-    padding-top:120px;
-    padding-bottom:120px
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .navbar .nav-link{
@@ -156,6 +155,7 @@ section{
 
 .btn{
     padding: 14px 18px;
+    margin: 0 0 0 20px;
     border-width: 2px;
     border-radius: 0;
 }
@@ -180,9 +180,10 @@ section{
 }
 .card-effect {
     box-shadow: var(--box-shadow);
-    background-color: #fff;
+    background-color: var(--dark);
     padding:25px;
-    transition:all 0.35s ease;
+    transition:
+    all 0.35s ease;
 }
 
 .card-effect:hover{
@@ -262,10 +263,6 @@ color:var(--primary)
     transition: all 0.4s ease;
 }
 
-img{
-    width: 200px;
-}
-
 .project img {
    transition: all 0.4s ease;
 }
@@ -279,7 +276,7 @@ img{
 .team-member img{
     width: 125px;
     height: 125px;
-    border-radius: 100px;
+    /* border-radius: 25px; */
 }
 .social-icons{
     display: flex;
